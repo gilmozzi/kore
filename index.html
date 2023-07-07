@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KORE</title>
+
+  <!--logo img on the tab-->
+  <link rel="icon" href="img/favicon.png" alt="tab_logo">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--font-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js" integrity="sha512-tQFq+nb/TSS648SDzWbSj0A67t4I1PFzR0U6Oi/yEYFyUbAIwg74SOCbr7t2X1Rn+iln7sYwfh8y+z7p0gddOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!--ScrollMagic cdn-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <!--css-->
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!--footer icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+    
+  <script defer src="./js/youtube.js"></script>
+  <script defer src="./js/main.js"></script>
+  <script defer src="js/nav.js"></script>
+</head>
+
+
+<body>
+
+  <!-- Navigation-->
+  <!-- 신경 쓸 필요 없는 섹션 -->
+  <nav class="navbar-area">
+
+    <div class="site-navbar">
+
+      <!-- site menu/nav -->
+      <ul>
+        <li><a href="#about-us-direction">ABOUT US</a></li>
+        <li><a href="#teams">TEAMS</a></li>
+        <li><a href="index.html" class="site-logo"><img src="img/logo.png" alt="logo"></a></li>
+        <li><a href="#content-section">PROJECTS</a></li>
+        <li><a href="#join-us">JOIN US</a></li>
+      </ul>
+
+      <!-- nav-toggler for mobile version only -->
+      <button class="nav-toggler">
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+
+
+<!--
+  클래스 네임 (<section class="your-part">) 본인들이 가장 편한이름으로 하고 코딩을 한번 해보십시오 ( ･ิ ͜ʖ ･ิ)
+
+  모르는부분이나 막히는 부분있으면 단톡에 물어 보십시오! ＼(´◓Д◔`)／
+
+  화이팅입니다 다들!!! ଘ(੭ˊᵕˋ)੭* ੈ✩‧₊˚
+-->
+
+
+  <section class="youtube">
+    <div class="youtube__area">
+      <div id="player">
+      </div>
+    </div>
+    <div class="youtube__cover">
+    </div>
+  </section>
+
+
+  <div class="banner">
+
+  </div>
+
+  <!--intro-->
+  <section class="intro scroll-spy">
+
+
+    <div class="card-frame back-to-position to-up delay-0">
+      <a href="#popup-card-1" class="link-tag">
+      <div class="front">
+        <div class="intro-card">
+          <div class="img-container"><img src="img/kore_logo.png"></div>
+          <p class="intro-name">FOUNDATION</p>
+        </div>
+      </div>
+      <div class="back" id="gil-back">
+        <p class="intro-content-start">"</p>
+        <p class="intro-slogan">DARE TO TRY</p>
+        <p class="intro-content">첫 발자국이였던 <span>FOUNDATION,</span><br>위대한 시작을 알렸습니다.</p>
+      </div>
+     </a>
+    </div>
+
+    <!-- content in the hidden tab -->
+    <div id="popup-card-1" class="card-overlay">
+      <div class="card-popup">
+
+          <a class="close" href="#!">&times;</a>
+          <div class="content">
+
+            <section class="card-container">
+              <div class="card-sub-title"> 
+                <h2>코어 1기 사진 모음집.zip</h2>
+              </div>
+              <div class="row"> 
+                  <div class="column">
+                    <img src="img/KORE1/단체 2.jpg" style="width:100%">
+                    <img src="img/KORE1/단체 3.jpg" style="width:100%">
+                    <img src="img/KORE1/Management 1.jpg" style="width:100%">
+                    <img src="img/KORE1/Management 2.jpg" style="width:100%">
+                    <img src="img/KORE1/Finance 2.jpg" style="width:100%">
+                    <img src="img/KORE1/Finance 3.jpg" style="width:100%">
+                    <img src="img/KORE1/Design 1.jpg" style="width:100%">
+                    <img src="img/KORE1/Design 2.jpg" style="width:100%">
+                    <img src="img/KORE1/IT 1.jpg" style="width:100%">
+                    <img src="img/KORE1/IT 2.jpg" style="width:100%">
+                    <img src="img/KORE1/1.jpg" style="width:100%">
+                    <img src="img/KORE1/2.jpg" style="width:100%">
+                    <img src="img/KORE1/3.jpg" style="width:100%">
+                    <img src="img/KORE1/4.jpg" style="width:100%">
+                  </div>
+              </div>
+            </section>
+
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="card-frame back-to-position to-up delay-1">
+      <a href="#popup-card-2" class="link-tag">
+      <div class="front">
+        <div class="intro-card">
+          <div class="img-container"><img src="img/kore_logo2.png"></div>
+          <p class="intro-name">THE BRIDGE</p>
+        </div>
+      </div>
+      <div class="back" id="gil-back">
+        <p class="intro-content-start">"</p>
+        <p class="intro-slogan">A STEP TO INNOVATION</p>
+        <p class="intro-content">다음 단계로 <br><span>THE BRIDGE,</span><br>를 통해 넘어가 성장 했습니다.</p>
+      </div>
+      </a>
+    </div>
+
+    <!-- content in the hidden tab -->
+    <div id="popup-card-2" class="card-overlay">
+      <div class="card-popup">
+
+          <a class="close" href="#!">&times;</a>
+          <div class="content">
+
+            <section class="card-container">
+              <div class="card-sub-title"> 
+                <h2>코어 2기 사진 모음집.zip</h2>
+              </div>
+              <div class="row"> 
+                  <div class="column">
+                    <img src="img/KORE2/1.jpg" style="width:100%">
+                    <img src="img/KORE2/2.JPG" style="width:100%">
+                    <img src="img/KORE2/3.jpg" style="width:100%">
+                    <img src="img/KORE2/4.JPG" style="width:100%">
+                    <img src="img/KORE2/5.jpg" style="width:100%">
+                    <img src="img/KORE2/6.JPG" style="width:100%">
+                    <img src="img/KORE2/7.jpg" style="width:100%">
+                    <img src="img/KORE2/8.JPG" style="width:100%">
+                    <img src="img/KORE2/9.jpg" style="width:100%">
+                    <img src="img/KORE2/10.JPG" style="width:100%">
+                    <img src="img/KORE2/11.jpg" style="width:100%">
+                    <img src="img/KORE2/12.JPG" style="width:100%">
+                    <img src="img/KORE2/13.jpg" style="width:100%">
+                    <img src="img/KORE2/14.JPG" style="width:100%">
+                    <img src="img/KORE2/15.jpg" style="width:100%">
+                    <img src="img/KORE2/16.JPG" style="width:100%">
+                    <img src="img/KORE2/17.jpg" style="width:100%">
+                    <img src="img/KORE2/18.JPG" style="width:100%">
+                    <img src="img/KORE2/19.jpg" style="width:100%">
+                    <img src="img/KORE2/20.JPG" style="width:100%">
+                    <img src="img/KORE2/21.jpg" style="width:100%">
+                    <img src="img/KORE2/22.JPG" style="width:100%">
+                    <img src="img/KORE2/24.JPG" style="width:100%">
+                    <img src="img/KORE2/25.JPG" style="width:100%">
+                  </div>
+              </div>
+            </section>
+
+          </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="card-frame back-to-position to-up delay-2">
+      <a href="#popup-card-3" class="link-tag">
+      <div class="front">
+        <div class="intro-card">
+          <div class="img-container"><img src="img/kore_logo3.png"></div>
+          <p class="intro-name">KORE CORE</p>
+        </div>
+      </div>
+      <div class="back" id="gil-back">
+        <p class="intro-content-start">"</p>
+        <p class="intro-slogan" id="smaller">TO BE CORE, FOLLOW KORE</p>
+        <p class="intro-content"><span>CORE,</span><br>중심이 되고 싶었던 우리, 한층 더 발전 해 나갔습니다.</p>
+      </div>
+      </a>
+    </div>
+
+    <div class="card-frame back-to-position to-up delay-3">
+      <div class="front">
+        <div class="intro-card">
+          <div class="img-container" id="loading"><img src="img/loading.png"></div>
+        </div>
+      </div>
+      <div class="back" id="gil-back">
+        <p class="intro-name" id="next-season">NEXT?</p>
+      </div>
+    </div>
+
+        <!-- content in the hidden tab -->
+        <div id="popup-card-3" class="card-overlay">
+          <div class="card-popup">
+    
+              <a class="close" href="#!">&times;</a>
+              <div class="content">
+    
+                <section class="card-container">
+                  <div class="card-sub-title"> 
+                    <h2>코어 3기 사진 모음집.zip</h2>
+                  </div>
+                  <div class="row"> 
+                      <div class="column">
+                        <img src="img/KORE3/1.JPG" style="width:100%">
+                        <img src="img/KORE3/2.JPG" style="width:100%">
+                        <img src="img/KORE3/3.JPG" style="width:100%">
+                        <img src="img/KORE3/5.JPG" style="width:100%">
+                        <img src="img/KORE3/6.JPG" style="width:100%">
+                        <img src="img/KORE3/7.JPG" style="width:100%">
+                        <img src="img/KORE3/8.JPG" style="width:100%">
+                        <img src="img/KORE3/9.JPG" style="width:100%">
+                        <img src="img/KORE3/10.JPG" style="width:100%">
+                        <img src="img/KORE3/11.JPG" style="width:100%">
+                        <img src="img/KORE3/12.JPG" style="width:100%">
+                        <img src="img/KORE3/4.JPG" style="width:100%">
+                      </div>
+                  </div>
+                </section>
+    
+              </div>
+          </div>
+        </div>
+
+
+
+
+    
+  </section>
+
+  <div class="about-us-direction">
+    <p>Our Mission</p>
+    <a href="#about-us-direction"><img src="./img/arrow.png" class="floating1"></img></a>
+  </div>
+
+
+  <section id="about-us-direction">
+  </section>
+  
+
+
+  
+
+
+
+<!-- Swiper -->
+<section class="about-us scroll-spy">
+  <p class="title">
+    코어의 요소, <br><span>BDI</span>
+  </p>
+  <p class="sub-title">
+    KORE는 세가지의 요소로 나타납니다.
+  </p>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+
+        <div class="left back-to-position to-down delay-1">
+          <img src="img/brain.jpg">
+        </div>
+
+        <div class="right back-to-position to-left delay-2">
+          <p class="line1"><span>B</span>RAINSTORM</p>
+          <p class="line2">창의적인 아이디어를 도출합니다.</p>
+          <p class="content">KORE는 초기 단계에 팀원들이 생각해온 아이디어를 한곳에 모아 머리를 맞대어 자유롭게 의견을 나누고 이를 통해 아이디어를 4개로 추려냅니다.</p>
+        </div>
+
+
+      </div>
+      <div class="swiper-slide">
+
+        <div class="left back-to-position to-down delay-1">
+          <img src="img/develop.jpg">
+        </div>
+
+        <div class="right back-to-position to-left delay-2">
+          <p class="line1"><span>D</span>EVELOP</p>
+          <p class="line2">정해진 아이디어를 구현합니다.</p>
+          <p class="content">KORE내에서 투표로 선정된 네개의 아이디어에 맞춰 팀을 선정해 구현을 해냅니다.</p>
+        </div>
+
+
+      </div>
+      <div class="swiper-slide">
+
+        <div class="left back-to-position to-down delay-1">
+          <img src="img/implement.jpg">
+        </div>
+
+        <div class="right back-to-position to-left delay-2">
+          <p class="line1"><span>I</span>MPLEMENT</p>
+          <p class="line2">선정된 아이템을 실행시킵니다.</p>
+          <p class="content">KORE 외부 사람들을 초대하여 구현한 아이디어를 발표 한 후, 투표를 통해 선정된 최종 아이템을 실행 시킵니다.</p>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-prev">	&#8592;</div>
+    <div class="swiper-next">&#8594;</div>
+  </div>
+</section>
+
+
+<!--team-->
+<section class="teams scroll-spy" id="teams">
+
+  <div class="heading">
+    <p class="department back-to-position delay-0">DEPARTMENTS</p>
+    <BR>
+    <p class="sub back-to-position delay-1">코어는 체계적입니다.</p>
+    <br>
+    <p class="back-to-position delay-2">팀은 네개로 나눠지고 각 부서만의 색깔이있습니다.</p>
+  </div>
+
+  <div class="wrap">
+
+    <div class="external">
+      <img src="img/external.png" class="back-to-position to-down delay-0">
+      <p class="team-name back-to-position to-right delay-0">External</p>
+      <p class="team-explain back-to-position to-up delay-0"><span>코어</span> 외부에서 펀드레이징, 마케팅, 외부발표 준비, 타 동아리와 접촉을 하는 부서입니다.</p>
+    </div>
+
+    <div class="internal">
+      <img src="img/internal.png" class="back-to-position to-down delay-1">
+      <p class="team-name back-to-position to-right delay-1">Internal</p>
+      <p class="team-explain back-to-position to-up delay-1"><span>코어</span> 내부에서 MT, 각종 소셜이벤트, 회식을 담당하는 부서입니다.</p>
+    </div>
+
+    <div class="design">
+      <img src="img/design.png" class="back-to-position to-down delay-2">
+      <p class="team-name back-to-position to-right delay-2">Design</p>
+      <p class="team-explain back-to-position to-up delay-2"><span>코어</span>의 굿즈, 어페럴, 홍보를 위한 포스터 등을 디자인하며 SNS를 관리하는 부서입니다.</p>
+    </div>
+
+    <div class="project">
+      <img src="img/project.png" class="back-to-position to-down delay-3">
+      <p class="team-name back-to-position to-up delay-3">Project</p>
+      <p class="team-explain back-to-position to-right delay-3">지난 학기에 투표로 선정된 아이디어를 실행하는 팀입니다.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!--Join Us-->
+<section class="join-us scroll-spy" id="join-us">
+  <div class="wrap">
+    <div class="left">
+      <div class="heading back-to-position to-down delay-0">
+        <p>WELCOME<br>TO OUR <span>TEAM</span>!</p>
+      </div>
+      <div class="content ">
+
+        <p class="back-to-position to-right delay-2">&nbsp;코어의 일원이 되어 함께 나아가요!</p>
+
+        <a href="index.html" class="back-to-position to-right delay-3">
+        <div class="apply-btn">지원하기</div>
+        </a>
+
+        
+      </div>
+    </div>
+
+    <div class="right back-to-position to-left delay-1">
+      <img src="img/joinus.png">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+  <!--footer-->
+  <footer class ="footer-container">
+    <div class ="footer">
+      <div class="footer-left">
+        <p>KORE : CORE &copy; 2022</p>
+        <br>
+        <p>cgkang@iu.edu	&ensp; 812)351-0448 	&ensp; Bloomington, IN</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="https://www.facebook.com/profile.php?id=100006230953752"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/gil_mozzi/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/charles-kang-3037691a3/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.iu.edu/cgkang"><i class="fa fa-github"></i></a>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+</body>
+</html>
