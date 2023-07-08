@@ -1,12 +1,14 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   color: #181818;
   background: white;
   position: relative;
+  overflow-x: hidden;
 }
 
 *,
@@ -322,9 +324,6 @@ a.site-logo img {
 
 
 /* Content Start 
-  본인 css는 여기서 시작하시면 됩니당 ＿〆(。。)
-
-  
 */
 
 
@@ -1718,7 +1717,17 @@ a.site-logo img {
 
   .intro-slogan{
     margin-top: -30px;
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  .intro-content {
+    font-size: 12px;
+  }
+
+  .intro-content span {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2C5F89;
   }
 
   .front {
@@ -1754,6 +1763,11 @@ a.site-logo img {
 
   .card-container .column img {
     margin-top: 15px;
+    width: 100%;
+  }
+
+  .card-container {
+    padding: 20px 20px 50px;
   }
   
 
@@ -1793,11 +1807,11 @@ a.site-logo img {
   }
 
   .swiper-slide .right .line1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .swiper-slide .right .line1 span {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .swiper-slide .right .line2 {
