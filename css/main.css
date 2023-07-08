@@ -404,6 +404,7 @@ a.site-logo img {
   font-size: 90px;
   font-weight: 900;
   letter-spacing: 1rem;
+  font-family: 'Anton', sans-serif;
 }
 
 .about-us .sub-title {
@@ -433,7 +434,7 @@ a.site-logo img {
 .swiper-slide .right .line1 {
   font-size: 50px;
   color: gray;
-  font-weight: 900;
+  font-family: 'Anton', sans-serif;
 }
 
 .swiper-slide .right .line1 span {
@@ -805,60 +806,9 @@ a.site-logo img {
 }
 
 
-/*About US*/
-
 #about-us-direction {
   height: 100px;
 }
-
-
-.about-us-inner {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 150px 0 500px;
-}
-
-.about-us-inner .left,
-.about-us-inner .right {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 50%;
-}
-
-.about-us-inner .left {
-  padding: 0 50px;
-}
-
-.about-us .about-us-inner .right img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.24);
-}
-
-.about-us-title {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 20px;
-  color: #3C84B5;
-  padding-bottom: 10px;
-}
-
-.highlight {
-  font-size: 50px;
-  font-weight: 900;
-}
-
-.about-us-content {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 20px;
-  line-height: 27px;
-  color: #2C5F89;
-  margin: 50px 0 20px;
-}
-
-
 
 
 /* teams */
@@ -903,9 +853,9 @@ a.site-logo img {
 }
 
 .teams .wrap div .team-name {
+  font-family: 'Anton', sans-serif;
   margin-top: 10px;
   font-size: 30px;
-  font-weight: 900;
   color: #4d4d4d;
 }
 
@@ -1807,11 +1757,11 @@ a.site-logo img {
   }
 
   .swiper-slide .right .line1 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .swiper-slide .right .line1 span {
-    font-size: 32px;
+    font-size: 40px;
   }
 
   .swiper-slide .right .line2 {
